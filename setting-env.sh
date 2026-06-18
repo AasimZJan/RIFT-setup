@@ -24,6 +24,8 @@ git clone https://github.com/oshaughn/research-projects-RIT.git
 
 cd research-projects-RIT
 
+git checkout rift_O4d
+
 pip install -e .
 
 pip install pyseobnr
