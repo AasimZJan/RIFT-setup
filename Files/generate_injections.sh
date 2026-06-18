@@ -8,7 +8,7 @@ util_LALWriteFrame.py --inj mdc.xml.gz --event 0 --instrument L1 --start 9999998
 util_LALWriteFrame.py --inj mdc.xml.gz --event 0 --instrument V1 --start 999999850 --stop 1000000150 --approx "NRHybSur3dq8"   --verbose --srate 16384 --seglen 8 --fref 10  #--use-hlms-as-injections
 
 # calculate SNR, expects the psds to be outside one directory
-ls *.gwf |lal_path2cache >local.cache; util_FrameZeroNoiseSNR.py --cache local.cache  --psd-file H1=../H1-psd.xml.gz --fmin-snr 20 --psd-file L1=../L1-psd.xml.gz --psd-file V1=../V1-psd.xml.gz --fmax-snr 2048
+ls *.gwf |lal_path2cache >local.cache; util_FrameZeroNoiseSNR.py --cache local.cache  --psd-file H1=../H1-psd.xml.gz --fmin-snr 20 --psd-file L1=../L1-psd.xml.gz --psd-file V1=../V1-psd.xml.gz --fmax-snr 1024
 
 # generate coinc.xml
 util_SimInspiralToCoinc.py --sim-xml mdc.xml.gz --event 0
