@@ -68,5 +68,5 @@ export LAL_DATA_PATH=/home/aasim.jan/LAL_DATA
 
 export CFLAGS="-std=c99"
 export SINGULARITY_RIFT_IMAGE=/cvmfs/singularity.opensciencegrid.org/james-clark/research-projects-rit/rift:latest
-export RIFT_GETENV=LD_LIBRARY_PATH,PATH,PYTHONPATH,*RIFT*,LIBRARY_PATH,GW_SURROGATE
+export RIFT_GETENV=LD_LIBRARY_PATH,PATH,PYTHONPATH,*RIFT*,LIBRARY_PATH,LAL_DATA_PATH,GW_SURROGATE
 EOF
